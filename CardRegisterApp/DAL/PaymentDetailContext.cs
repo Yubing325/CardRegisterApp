@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CardRegisterApp.API.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,12 @@ namespace CardRegisterApp.API.DAL
 {
     public class PaymentDetailContext : DbContext
     {
-        private readonly DbContextOptions options;
 
-        public PaymentDetailContext(DbContextOptions<PaymentDetailContext> options):base(options)
+        public PaymentDetailContext(DbContextOptions<PaymentDetailContext> options) : base(options)
         {
-            this.options = options;
+
         }
+
+        public DbSet<PaymentDetail> PaymentDetails{ get; set; }
     }
 }
