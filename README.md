@@ -7,7 +7,7 @@
 * Form input type & length validation in both front-end and server-side.
 * Cors supported.
 
-# Front-end sturcture:
+# Front-end Structure:
 ```
 ● src
 +---● app
@@ -26,6 +26,21 @@
 |   |--app.module.ts
 |
 |--index.html (cdn path for bootstrap & fa icons)
+```
+# Back-end Structure
+```
+● CardRegisterApp.API
++---● Controllers
+|   +--● PaymentDetailController.cs
++---● DAL //Data Access Layer
+|   +--● PaymentDetailContext.cs
++---● Models
+|   +--● PaymentDetail.cs
++---● Migrations //EF core migration files
++---● package.json
++---● appsettings.json
++---● Program.cs
++---● Startup.cs
 ```
 
 # Demo
