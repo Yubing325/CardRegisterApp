@@ -8,7 +8,7 @@
 * Cors supported.
 
 # Front-end sturcture:
-
+```
 ● src
 +---● app
 |   +--● payment-details
@@ -26,6 +26,7 @@
 |   |--app.module.ts
 |
 |--index.html (cdn path for bootstrap & fa icons)
+```
 
 # Demo
 
